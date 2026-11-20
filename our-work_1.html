@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Work — Congleton Electrical | Electrician Portfolio Gallery</title>
+  <meta name="description" content="Browse our portfolio of electrical work across Congleton, Cheshire East and beyond — consumer unit upgrades, industrial fit-outs, EV charger installs, rewires and more.">
+  <link rel="canonical" href="https://www.congletonelectrical.co.uk/our-work.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.congletonelectrical.co.uk/our-work.html">
+  <meta property="og:title" content="Our Work — Congleton Electrical Portfolio">
+  <meta property="og:description" content="Real jobs, real results. Browse our portfolio of electrical work across Cheshire East.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy:#132135; --navy-mid:#1e3352; --steel-dark:#2e4d6e;
+      --steel:#416384; --steel-mid:#5a7fa0; --steel-light:#778da3;
+      --steel-pale:#a8bfcf; --steel-wash:#dce8f0;
+      --gold:#caa050; --gold-light:#dbb96a; --gold-pale:#f0dca8;
+      --white:#ffffff; --offwhite:#f4f7fa;
+      --text:#1a2535; --muted:#5a6f82; --border:#d0dde8;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden}
+    h1,h2,h3,h4{font-family:'Barlow',sans-serif}
+    img{max-width:100%;height:auto;display:block}
+
+    /* NAV */
+    nav{
+      position:fixed;top:0;left:0;right:0;z-index:100;
+      background:#ffffff;padding:0 5%;
+      display:flex;align-items:center;justify-content:space-between;
+      height:72px;
+      border-bottom:2px solid var(--gold);
+      box-shadow:0 2px 16px rgba(19,33,53,0.08);
+    }
+    .nav-logo{font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--navy);text-decoration:none}
+    .nav-logo span{color:var(--gold)}
+    .nav-links{display:flex;gap:24px;list-style:none;align-items:center}
+    .nav-links a{color:var(--navy);text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;transition:color 0.2s}
+    .nav-links a:hover,.nav-links a.active{color:var(--steel)}
+    .nav-cta{background:var(--gold)!important;color:var(--navy)!important;padding:9px 20px;border-radius:3px}
+    .nav-cta:hover{background:var(--gold-light)!important}
+
+    /* MOBILE MENU */
+    .nav-mobile{display:none;align-items:center;gap:10px}
+    .nav-call-btn{background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:3px;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;white-space:nowrap}
+    .hamburger{background:none;border:none;cursor:pointer;padding:6px;display:flex;flex-direction:column;justify-content:center;gap:5px;width:38px;height:38px}
+    .hamburger span{display:block;height:2.5px;width:26px;background:var(--navy);border-radius:2px;transition:all 0.25s ease}
+    .hamburger.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+    .hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+    .hamburger.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+    .mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;background:#fff;border-bottom:3px solid var(--gold);box-shadow:0 8px 24px rgba(19,33,53,0.12);z-index:99;padding:16px 0}
+    .mobile-menu.open{display:block}
+    .mobile-menu ul{list-style:none;padding:0;margin:0}
+    .mobile-menu ul li a{display:block;padding:13px 5%;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--navy);text-decoration:none;border-bottom:1px solid rgba(19,33,53,0.06);transition:background 0.15s}
+    .mobile-menu ul li a:hover{background:var(--offwhite);color:var(--steel)}
+    .mobile-menu ul li:last-child a{background:var(--gold);color:var(--navy);border-bottom:none;margin:12px 5% 4px;border-radius:3px;text-align:center;padding:13px}
+    @media(max-width:768px){
+      .nav-links{display:none}
+      .nav-mobile{display:flex}
+    }
+
+    /* PAGE HEADER */
+    .page-header{
+      background:var(--navy);
+      padding:100px 5% 48px;
+      text-align:center;
+    }
+    .page-eyebrow{font-family:'Barlow Condensed',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+    .page-title{font-size:2.4rem;font-weight:800;color:#fff;margin-bottom:12px;line-height:1.15}
+    .page-sub{font-size:1rem;color:rgba(255,255,255,0.6);max-width:560px;margin:0 auto 20px;line-height:1.65}
+
+    /* FILTER TABS */
+    .filter-bar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;padding:28px 5% 0}
+    .filter-btn{background:none;border:1.5px solid var(--border);color:var(--muted);padding:7px 16px;border-radius:3px;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.18s}
+    .filter-btn:hover{border-color:var(--steel);color:var(--navy)}
+    .filter-btn.active{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+
+    /* GALLERY GRID */
+    .gallery-page{padding:32px 5% 64px;max-width:1200px;margin:0 auto}
+    .gallery-masonry{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+    }
+    .gal-item{
+      position:relative;
+      border-radius:6px;
+      overflow:hidden;
+      cursor:pointer;
+      background:var(--navy-mid);
+      aspect-ratio:4/3;
+    }
+    .gal-item:nth-child(4n+1){aspect-ratio:4/3}
+    .gal-item:nth-child(4n+2){aspect-ratio:1/1}
+    .gal-item:nth-child(4n+3){aspect-ratio:4/3}
+    .gal-item:nth-child(4n+4){aspect-ratio:3/4}
+    .gal-item img{
+      width:100%;height:100%;
+      object-fit:cover;
+      transition:transform 0.35s ease;
+      display:block;
+    }
+    .gal-item:hover img{transform:scale(1.04)}
+    .gal-overlay{
+      position:absolute;inset:0;
+      background:linear-gradient(to top, rgba(19,33,53,0.85) 0%, rgba(19,33,53,0) 55%);
+      opacity:0;
+      transition:opacity 0.25s;
+      display:flex;align-items:flex-end;padding:16px;
+    }
+    .gal-item:hover .gal-overlay{opacity:1}
+    .gal-label{
+      font-family:'Barlow Condensed',sans-serif;font-size:0.85rem;font-weight:700;
+      letter-spacing:0.06em;text-transform:uppercase;color:var(--gold);
+      line-height:1.3;
+    }
+    .gal-zoom-icon{
+      position:absolute;top:10px;right:10px;
+      background:rgba(19,33,53,0.7);border-radius:3px;
+      width:28px;height:28px;display:flex;align-items:center;justify-content:center;
+      opacity:0;transition:opacity 0.2s;
+    }
+    .gal-item:hover .gal-zoom-icon{opacity:1}
+
+    /* PLACEHOLDER ITEM */
+    .gal-placeholder{
+      background:var(--navy-mid);
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      gap:10px;padding:24px;
+      cursor:default;
+    }
+    .gal-placeholder:hover img{transform:none}
+    .gal-placeholder-icon{opacity:0.3}
+    .gal-placeholder-text{font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);text-align:center}
+    .gal-placeholder-label{font-family:'Barlow Condensed',sans-serif;font-size:0.8rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--gold);opacity:0.5;position:absolute;bottom:12px;left:14px;right:14px;line-height:1.3}
+
+    /* LIGHTBOX */
+    .lightbox{
+      display:none;position:fixed;inset:0;z-index:1000;
+      background:rgba(10,16,26,0.95);
+      align-items:center;justify-content:center;
+      padding:20px;
+    }
+    .lightbox.open{display:flex}
+    .lightbox-inner{
+      max-width:900px;width:100%;position:relative;
+    }
+    .lightbox-img{
+      width:100%;max-height:80vh;object-fit:contain;border-radius:4px;
+      display:block;
+    }
+    .lightbox-caption{
+      font-family:'Barlow Condensed',sans-serif;font-size:0.85rem;font-weight:700;
+      letter-spacing:0.1em;text-transform:uppercase;
+      color:var(--gold);text-align:center;margin-top:12px;
+    }
+    .lightbox-close{
+      position:absolute;top:-12px;right:-12px;
+      background:var(--gold);color:var(--navy);border:none;border-radius:50%;
+      width:36px;height:36px;cursor:pointer;font-size:18px;font-weight:700;
+      display:flex;align-items:center;justify-content:center;line-height:1;
+      transition:background 0.15s;
+    }
+    .lightbox-close:hover{background:var(--gold-light)}
+    .lightbox-nav{
+      position:absolute;top:50%;transform:translateY(-50%);
+      background:rgba(255,255,255,0.1);border:1.5px solid rgba(255,255,255,0.2);
+      color:#fff;width:44px;height:44px;border-radius:50%;cursor:pointer;
+      display:flex;align-items:center;justify-content:center;font-size:20px;
+      transition:background 0.15s;
+      backdrop-filter:blur(4px);
+    }
+    .lightbox-nav:hover{background:rgba(202,160,80,0.3);border-color:var(--gold)}
+    .lightbox-prev{left:-54px}
+    .lightbox-next{right:-54px}
+    @media(max-width:720px){
+      .lightbox-prev{left:4px}
+      .lightbox-next{right:4px}
+      .lightbox-close{top:4px;right:4px}
+    }
+
+    /* CATEGORIES */
+    .cat-label{
+      display:inline-block;
+      font-family:'Barlow Condensed',sans-serif;font-size:0.65rem;font-weight:700;
+      letter-spacing:0.1em;text-transform:uppercase;
+      background:rgba(202,160,80,0.15);color:var(--gold);
+      padding:3px 8px;border-radius:2px;
+      position:absolute;top:10px;left:10px;
+    }
+
+    /* CTA STRIP */
+    .gallery-cta{
+      background:var(--navy);border-top:3px solid var(--gold);
+      padding:40px 5%;text-align:center;
+    }
+    .gallery-cta h2{font-size:1.6rem;font-weight:800;color:#fff;margin-bottom:8px}
+    .gallery-cta p{color:rgba(255,255,255,0.6);margin-bottom:20px}
+    .cta-btn{display:inline-block;background:var(--gold);color:var(--navy);padding:14px 32px;border-radius:3px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;transition:all 0.2s}
+    .cta-btn:hover{background:var(--gold-light);transform:translateY(-2px)}
+    .cta-btn-outline{display:inline-block;border:2px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.8);padding:12px 28px;border-radius:3px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;transition:all 0.2s;margin-left:12px}
+    .cta-btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+
+    /* FOOTER */
+    footer{background:#0c1824;border-top:3px solid var(--gold);padding:28px 5%}
+    .footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+    .footer-text{font-size:0.78rem;color:rgba(255,255,255,0.4);line-height:1.7}
+    .footer-text a{color:rgba(255,255,255,0.4);text-decoration:none}
+    .footer-text a:hover{color:var(--gold)}
+    .footer-badges{display:flex;gap:8px;flex-wrap:wrap}
+    .footer-badge{font-family:'Barlow Condensed',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--steel-light);border:1px solid rgba(90,127,160,0.3);padding:4px 10px;border-radius:3px}
+
+    /* RESPONSIVE */
+    @media(max-width:900px){.gallery-masonry{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:580px){
+      .gallery-masonry{grid-template-columns:1fr}
+      .gal-item{aspect-ratio:4/3!important}
+      .page-title{font-size:1.8rem}
+      .footer-inner{flex-direction:column;align-items:flex-start}
+      .cta-btn-outline{margin-left:0;margin-top:10px}
+    }
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">Congleton <span>Electrical</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="our-work.html" class="active">Our Work</a></li>
+    <li><a href="index.html#areas">Areas</a></li>
+    <li><a href="ev-chargers.html">EV Chargers</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Free Quote</a></li>
+  </ul>
+  <div class="nav-mobile">
+    <a href="tel:07492085671" class="nav-call-btn">📞 Call Us</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+  <ul>
+    <li><a href="index.html#services" class="mobile-link">Services</a></li>
+    <li><a href="index.html#about" class="mobile-link">About</a></li>
+    <li><a href="index.html#reviews" class="mobile-link">Reviews</a></li>
+    <li><a href="our-work.html" class="mobile-link">Our Work / Gallery</a></li>
+    <li><a href="index.html#areas" class="mobile-link">Areas We Cover</a></li>
+    <li><a href="ev-chargers.html" class="mobile-link">EV Chargers</a></li>
+    <li><a href="index.html#contact" class="mobile-link">Free Quote →</a></li>
+  </ul>
+</div>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <p class="page-eyebrow">Portfolio</p>
+  <h1 class="page-title">Real Work. Real Experience.</h1>
+  <p class="page-sub">From large-scale industrial fit-outs to domestic rewires and EV charger installations — a selection of jobs carried out across Congleton, Cheshire East and beyond.</p>
+</header>
+
+<!-- FILTER BAR -->
+<div class="filter-bar" role="navigation" aria-label="Filter gallery by category">
+  <button class="filter-btn active" data-filter="all">All Work</button>
+  <button class="filter-btn" data-filter="commercial">Commercial</button>
+  <button class="filter-btn" data-filter="domestic">Domestic</button>
+  <button class="filter-btn" data-filter="eicr">Testing &amp; EICR</button>
+  <button class="filter-btn" data-filter="ev">EV Chargers</button>
+</div>
+
+<!-- GALLERY -->
+<main class="gallery-page" id="galleryMain">
+  <div class="gallery-masonry" id="galleryGrid">
+
+    <!-- ITEM 1 — Commercial -->
+    <div class="gal-item" data-category="domestic" data-caption="Recessed downlights &amp; shelving illumination — kitchen extension, Congleton" role="button" tabindex="0" aria-label="Open photo: Recessed Downlights, Kitchen Extension">
+      <div class="cat-label">Domestic</div>
+      <img src="gal-ev1.jpg" alt="Recessed downlights and illuminated shelving in kitchen extension" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+      <div class="gal-overlay">
+        <div class="gal-label">Recessed Downlights &amp; Shelving Lighting — Kitchen Extension</div>
+      </div>
+    </div>
+
+    <!-- ITEM 2 — EICR -->
+    <div class="gal-item" data-category="domestic" data-caption="Garden bollard light — before and after installation" role="button" tabindex="0" aria-label="Open photo: Garden Bollard Light">
+      <div class="cat-label">Domestic</div>
+      <img src="gal-garden.jpg" alt="Garden bollard light before and after installation" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+      <div class="gal-overlay">
+        <div class="gal-label">Garden Bollard Light — Before &amp; After</div>
+      </div>
+    </div>
+
+    <!-- ITEM 3 — Commercial -->
+    <div class="gal-item" data-category="commercial" data-caption="Electrical conduit installation — rooftop commercial project" role="button" tabindex="0" aria-label="Open photo: Conduit Installation, Commercial">
+      <div class="cat-label">Commercial</div>
+      <div class="gal-placeholder" style="width:100%;height:100%;position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+        <svg class="gal-placeholder-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="4" y="10" width="40" height="30" rx="3" stroke="rgba(202,160,80,0.5)" stroke-width="2.5" fill="none"/><circle cx="15" cy="20" r="4" stroke="rgba(202,160,80,0.5)" stroke-width="2" fill="none"/><path d="M4 32l11-9 8 7 8-6 13 11" stroke="rgba(202,160,80,0.5)" stroke-width="2" stroke-linejoin="round" fill="none"/></svg>
+        <span class="gal-placeholder-text">Photo uploading soon</span>
+      </div>
+      <div class="gal-overlay">
+        <div class="gal-label">Conduit Installation — Commercial Project</div>
+      </div>
+    </div>
+
+    <!-- ITEM 4 — Domestic -->
+    <div class="gal-item" data-category="domestic" data-caption="LED cove lighting &amp; task lighting — kitchen extension, Congleton" role="button" tabindex="0" aria-label="Open photo: LED Cove Lighting, Kitchen">
+      <div class="cat-label">Domestic</div>
+      <img src="gal-kitchen1.jpg" alt="LED cove and task lighting in kitchen extension with skylight" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+      <div class="gal-overlay">
+        <div class="gal-label">LED Cove &amp; Task Lighting — Kitchen Extension</div>
+      </div>
+    </div>
+
+    <!-- ITEM 5 — EV -->
+    <div class="gal-item" data-category="ev" data-caption="Ohme home EV charger installed — period brick property, Cheshire" role="button" tabindex="0" aria-label="Open photo: Ohme EV Charger Installation">
+      <div class="cat-label">EV Chargers</div>
+      <img src="gal-ev2.jpg" alt="Ohme home EV charger installed on brick wall exterior" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+      <div class="gal-overlay">
+        <div class="gal-label">Ohme Home EV Charger — Installed, Cheshire</div>
+      </div>
+    </div>
+
+    <!-- ITEM 6 — Domestic -->
+    <div class="gal-item" data-category="domestic" data-caption="External security light — rear of property installation" role="button" tabindex="0" aria-label="Open photo: External Security Light">
+      <div class="cat-label">Domestic</div>
+      <img src="gal-security.jpg" alt="External security light installed on rear brick elevation at night" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+      <div class="gal-overlay">
+        <div class="gal-label">External Security Light — Rear of Property</div>
+      </div>
+    </div>
+
+    <!-- ITEM 7 — EICR -->
+    <div class="gal-item" data-category="eicr" data-caption="EICR certificate testing — landlord property, Holmes Chapel" role="button" tabindex="0" aria-label="Open photo: EICR Testing, Holmes Chapel">
+      <div class="cat-label">Testing &amp; EICR</div>
+      <div class="gal-placeholder" style="width:100%;height:100%;position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+        <svg class="gal-placeholder-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="4" y="10" width="40" height="30" rx="3" stroke="rgba(202,160,80,0.5)" stroke-width="2.5" fill="none"/><circle cx="15" cy="20" r="4" stroke="rgba(202,160,80,0.5)" stroke-width="2" fill="none"/><path d="M4 32l11-9 8 7 8-6 13 11" stroke="rgba(202,160,80,0.5)" stroke-width="2" stroke-linejoin="round" fill="none"/></svg>
+        <span class="gal-placeholder-text">Photo uploading soon</span>
+      </div>
+      <div class="gal-overlay">
+        <div class="gal-label">EICR Inspection — Landlord Property, Holmes Chapel</div>
+      </div>
+    </div>
+
+    <!-- ITEM 8 — Commercial -->
+    <div class="gal-item" data-category="domestic" data-caption="LED strip under-cabinet &amp; cove lighting — kitchen extension, Congleton" role="button" tabindex="0" aria-label="Open photo: LED Under-Cabinet Lighting">
+      <div class="cat-label">Domestic</div>
+      <img src="gal-kitchen2.jpg" alt="LED strip under-cabinet and cove lighting in kitchen extension" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+      <div class="gal-overlay">
+        <div class="gal-label">LED Under-Cabinet &amp; Cove Lighting — Kitchen</div>
+      </div>
+    </div>
+
+    <!-- ITEM 9 — EV -->
+    <div class="gal-item" data-category="ev" data-caption="Ohme EV charger — installed position and cable management, Cheshire" role="button" tabindex="0" aria-label="Open photo: EV Charger Cable Management">
+      <div class="cat-label">EV Chargers</div>
+      <img src="gal-shelving.jpg" alt="Ohme EV charger showing full installation and cable management" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">ITEM 9 — EV -->
+    <div class="gal-item" data-category="ev" data-caption="Ohme EV charger — installed position and cable management, Cheshire" role="button" tabindex="0" aria-label="Open photo: Workplace EV Charging">
+      <div class="cat-label">EV Chargers</div>
+      <div class="gal-placeholder" style="width:100%;height:100%;position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+        <svg class="gal-placeholder-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="4" y="10" width="40" height="30" rx="3" stroke="rgba(202,160,80,0.5)" stroke-width="2.5" fill="none"/><circle cx="15" cy="20" r="4" stroke="rgba(202,160,80,0.5)" stroke-width="2" fill="none"/><path d="M4 32l11-9 8 7 8-6 13 11" stroke="rgba(202,160,80,0.5)" stroke-width="2" stroke-linejoin="round" fill="none"/></svg>
+        <span class="gal-placeholder-text">Photo uploading soon</span>
+     <div class="gal-label">Ohme EV Charger — Installation &amp; Cable Management</div>ITEM 9 — EV -->
+    <div class="gal-item" data-category="ev" data-caption="Ohme EV charger — installed position and cable management, Cheshire" role="button" tabindex="0" aria-label="Open photo: Workplace EV Charging">
+      <div class="cat-label">EV Chargers</div>
+      <img src="gal-photo8.jpg" alt="Ohme EV charger showing full installation and cable management" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">ITEM 9 — EV -->
+    <div class="gal-item" data-category="ev" data-caption="Ohme EV charger — installed position and cable management, Cheshire" role="button" tabindex="0" aria-label="Open photo: Workplace EV Charging">
+      <div class="cat-label">EV Chargers</div>
+      <div class="gal-placeholder" style="width:100%;height:100%;position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+        <svg class="gal-placeholder-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="4" y="10" width="40" height="30" rx="3" stroke="rgba(202,160,80,0.5)" stroke-width="2.5" fill="none"/><circle cx="15" cy="20" r="4" stroke="rgba(202,160,80,0.5)" stroke-width="2" fill="none"/><path d="M4 32l11-9 8 7 8-6 13 11" stroke="rgba(202,160,80,0.5)" stroke-width="2" stroke-linejoin="round" fill="none"/></svg>
+        <span class="gal-placeholder-text">Photo uploading soon</span>
+      </div>
+      <div class="gal-overlay">
+        <div class="gal-label">Workplace EV Charging — Commercial Property</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Empty state for filtered results -->
+  <div id="emptyState" style="display:none;text-align:center;padding:48px 0;color:var(--muted)">
+    <p style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">No photos in this category yet — check back soon.</p>
+  </div>
+
+  <!-- Upload note -->
+  <p style="text-align:center;font-size:0.78rem;color:var(--muted);margin-top:20px;font-style:italic">More photos added regularly. Last updated November 2026.</p>
+
+</main>
+
+<!-- CTA STRIP -->
+<section class="gallery-cta">
+  <h2>Ready to book your job?</h2>
+  <p>NAPIT-registered electrician covering Congleton, Cheshire East and surrounding areas.</p>
+  <a href="index.html#contact" class="cta-btn">Get a Free Quote &rarr;</a>
+  <a href="tel:07492085671" class="cta-btn-outline">📞 Call 07492 085671</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-text">
+      Congleton Electrical &middot; Congleton, Cheshire East, CW12<br>
+      <a href="tel:07492085671">07492 085671</a> &middot;
+      <a href="mailto:enquiries@congletonelectrical.co.uk">enquiries@congletonelectrical.co.uk</a><br>
+      &copy; 2026 Congleton Electrical. All rights reserved.
+    </div>
+    <div class="footer-badges">
+      <span class="footer-badge">NAPIT Registered</span>
+      <span class="footer-badge">18th Edition BS7671</span>
+      <span class="footer-badge">Fully Insured</span>
+      <span class="footer-badge">Est. 2018</span>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo viewer">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo">&#8592;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo">&#8594;</button>
+  </div>
+</div>
+
+<script>
+  // Mobile hamburger
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (hamburgerBtn && mobileMenu) {
+    hamburgerBtn.addEventListener('click', function() {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburgerBtn.classList.toggle('open', isOpen);
+      hamburgerBtn.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    document.querySelectorAll('.mobile-link').forEach(function(link) {
+      link.addEventListener('click', function() {
+        mobileMenu.classList.remove('open');
+        hamburgerBtn.classList.remove('open');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!mobileMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+        mobileMenu.classList.remove('open');
+        hamburgerBtn.classList.remove('open');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
+  // Filter logic
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const galItems = document.querySelectorAll('.gal-item');
+  const emptyState = document.getElementById('emptyState');
+
+  filterBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      filterBtns.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      const filter = btn.getAttribute('data-filter');
+      let visible = 0;
+      galItems.forEach(function(item) {
+        const cat = item.getAttribute('data-category');
+        const show = filter === 'all' || cat === filter;
+        item.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      emptyState.style.display = visible === 0 ? 'block' : 'none';
+    });
+  });
+
+  // Lightbox
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxCaption = document.getElementById('lightboxCaption');
+  const lightboxClose = document.getElementById('lightboxClose');
+  const lightboxPrev = document.getElementById('lightboxPrev');
+  const lightboxNext = document.getElementById('lightboxNext');
+  let currentIndex = 0;
+  let activeItems = [];
+
+  function openLightbox(index) {
+    activeItems = Array.from(document.querySelectorAll('.gal-item:not([style*="display: none"])'));
+    if (!activeItems.length) return;
+    currentIndex = index;
+    showLightboxItem(currentIndex);
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    lightboxClose.focus();
+  }
+
+  function showLightboxItem(idx) {
+    const item = activeItems[idx];
+    if (!item) return;
+    const img = item.querySelector('img');
+    const caption = item.getAttribute('data-caption') || item.querySelector('.gal-label')?.textContent || '';
+    if (img) {
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt || caption;
+      lightboxImg.style.display = '';
+    } else {
+      // No image yet — show placeholder message in lightbox
+      lightboxImg.src = '';
+      lightboxImg.style.display = 'none';
+    }
+    lightboxCaption.textContent = caption;
+    lightboxPrev.style.visibility = idx > 0 ? 'visible' : 'hidden';
+    lightboxNext.style.visibility = idx < activeItems.length - 1 ? 'visible' : 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+    lightboxImg.src = '';
+  }
+
+  galItems.forEach(function(item, i) {
+    item.addEventListener('click', function() {
+      activeItems = Array.from(document.querySelectorAll('.gal-item:not([style*="display: none"])'));
+      const idx = activeItems.indexOf(item);
+      openLightbox(idx >= 0 ? idx : 0);
+    });
+    item.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); item.click(); }
+    });
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightboxPrev.addEventListener('click', function() {
+    if (currentIndex > 0) { currentIndex--; showLightboxItem(currentIndex); }
+  });
+  lightboxNext.addEventListener('click', function() {
+    if (currentIndex < activeItems.length - 1) { currentIndex++; showLightboxItem(currentIndex); }
+  });
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft' && currentIndex > 0) { currentIndex--; showLightboxItem(currentIndex); }
+    if (e.key === 'ArrowRight' && currentIndex < activeItems.length - 1) { currentIndex++; showLightboxItem(currentIndex); }
+  });
+</script>
+</body>
+</html>
